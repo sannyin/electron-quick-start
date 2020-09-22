@@ -1,10 +1,22 @@
 {
-  "name": "electron-quick-start",
+  "name": "dabai",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder --win --x64",
+    "packager": "electron-packager . dabai --platform=win32 --arch=x64 --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules --icon=icon.ico"
+  },
+  "build": {
+    "appId": "大白",
+    "win": {
+      "icon":"icon.ico",
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    }
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -14,7 +26,7 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "xiaoshuai",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^10.1.2"

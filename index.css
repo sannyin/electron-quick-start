@@ -1,0 +1,8 @@
+.setbg{
+    width: 400px;
+    height: 100vw;
+    background: linear-gradient(to left, #21cafa 0%, #4e8eff 100%);
+    background: -webkit-linear-gradient(to left, #21cafa 0%, #4e8eff 100%);
+    background: -o-linear-gradient(to left, #21cafa 0%, #4e8eff 100%);
+    background: -moz-linear-gradient(to left, #21cafa 0%, #4e8eff 100%);
+}
